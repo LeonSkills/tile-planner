@@ -20,7 +20,7 @@ local function on_player_selected_area(event)
       table.insert(tiles, {name = tile.name, position = new_position})
     end
 
-    storage[event.player_index] = {tiles = tiles, width = max_x - min_x, height = max_y - min_y}
+    storage[event.player_index] = {tiles = tiles, width = max_x - min_x + 1, height = max_y - min_y + 1}
   end
 end
 
