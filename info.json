@@ -1,0 +1,13 @@
+{
+  "name": "tile-planner",
+  "version": "0.0.1",
+  "title": "Tile Planner",
+  "author": "LeonSkills & metal_mastery",
+  "contact": "discord: L__eon",
+  "homepage": "https://github.com/LeonSkills/tile-planner",
+  "factorio_version": "2.0",
+  "dependencies": [
+    "base >= 2.0"
+  ],
+  "description": "Provides a tool to make nice patterns in concrete"
+}

@@ -1,0 +1,6 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 2025-10-21
+  Features:
+    - Initial release
+    - Provides a tool to repeatedly apply a tile pattern elsewhere
