@@ -26,12 +26,20 @@ end
 
 local function on_player_reverse_selected_area(event)
   local item = event.item
+  local instant_build = false
   if not storage then return end
   if not storage[event.player_index] then return end
   if item == planner_name then
+    local player = game.players[event.player_index]
     local template = storage[event.player_index]
     local new_tiles = tile_patterns.repeat_pattern(template.tiles, template.width, template.height, event.area)
-    event.surface.set_tiles(new_tiles, true, true, true, true, game.players[event.player_index])
+    if instant_build then
+      event.surface.set_tiles(new_tiles, true, true, true, true, player)
+    else
+      for _, tile in pairs(new_tiles) do
+        event.surface.create_entity {name = "tile-ghost", inner_name = tile.name, position = tile.position, force = player.force, player = player, raise_built = true}
+      end
+    end
 
   end
 end
