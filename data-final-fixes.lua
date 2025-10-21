@@ -5,7 +5,6 @@ for tile_name, tile in pairs(data.raw.tile) do
   end
 end
 
-
 local planner = data.raw["selection-tool"]["tile-planner"]
 
 planner.select.tile_filters = buildable_tiles

@@ -1,36 +1,36 @@
 data:extend(
         {
           {
-            name                  = "tile-planner",
-            type                  = "selection-tool",
-            order                 = "c[automated-construction]-s[tile]",
-            select                = {
-              border_color        = {255, 127, 0},
-              cursor_box_type     = "copy",
-              mode                = {"any-tile", "tile-ghost"},
+            name               = "tile-planner",
+            type               = "selection-tool",
+            order              = "c[automated-construction]-s[tile]",
+            select             = {
+              border_color    = {255, 127, 0},
+              cursor_box_type = "copy",
+              mode            = {"any-tile", "tile-ghost"},
             },
-            alt_select            = {
-              border_color        = {127, 255, 0},
-              cursor_box_type     = "copy",
-              mode                = {"any-tile", "tile-ghost"},
+            alt_select         = {
+              border_color    = {127, 255, 0},
+              cursor_box_type = "copy",
+              mode            = {"any-tile", "tile-ghost"},
             },
-            reverse_select        = {
-              border_color        = {0, 127, 255},
-              cursor_box_type     = "copy",
-              mode                = {"nothing"},
+            reverse_select     = {
+              border_color    = {0, 127, 255},
+              cursor_box_type = "copy",
+              mode            = {"nothing"},
             },
-            alt_reverse_select    = {
-              border_color        = {0, 255, 127},
-              cursor_box_type     = "copy",
-              mode                = {"nothing"},
+            alt_reverse_select = {
+              border_color    = {0, 255, 127},
+              cursor_box_type = "copy",
+              mode            = {"nothing"},
             },
-            icon                  = "__tile-planner__/graphics/icons/planner.png",
-            icon_size             = 64,
-            stack_size            = 1,
-            subgroup              = "tool",
-            show_in_library       = false,
-            flags                 = {"not-stackable", "only-in-cursor", "spawnable"},
-            can_be_mod_opened     = false,
+            icon               = "__tile-planner__/graphics/icons/planner.png",
+            icon_size          = 64,
+            stack_size         = 1,
+            subgroup           = "tool",
+            show_in_library    = false,
+            flags              = {"not-stackable", "only-in-cursor", "spawnable"},
+            can_be_mod_opened  = false,
           },
           {
             name                     = "give-tile-planner",

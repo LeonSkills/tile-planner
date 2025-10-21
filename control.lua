@@ -16,11 +16,11 @@ local function on_player_selected_area(event)
     end
     local tiles = {}
     for _, tile in pairs(event.tiles) do
-      local new_position = {x=tile.position.x - min_x, y=tile.position.y - min_y}
-      table.insert(tiles, {name=tile.name, position = new_position})
+      local new_position = {x = tile.position.x - min_x, y = tile.position.y - min_y}
+      table.insert(tiles, {name = tile.name, position = new_position})
     end
 
-    storage[event.player_index] = {tiles=tiles, width = max_x - min_x, height = max_y - min_y}
+    storage[event.player_index] = {tiles = tiles, width = max_x - min_x, height = max_y - min_y}
   end
 end
 
@@ -35,7 +35,6 @@ local function on_player_reverse_selected_area(event)
 
   end
 end
-
 
 script.on_event(defines.events.on_player_selected_area, on_player_selected_area)
 script.on_event(defines.events.on_player_alt_selected_area, on_player_selected_area)
